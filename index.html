@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/output.css" rel="stylesheet">
+    <!-- <link href="src/output.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta name="description" content="Doorashada Gudoomiyaha Ururka UBAD">
     <title>Doorashada Gudoomiyaha Ururka UBAD</title>
     <BASE href="https://zedd42.github.io/ubad-doorasho/index.html">
@@ -14,11 +16,13 @@
     <header>
         <!-- The nav -->
         <section>
-            <div class="container mx-auto navbar">
+            <div class="max-w-2xl mx-auto navbar px-4">
                 <div class="flex-1">
-                    <a href="index.html">
+                    <a href="index.html" class="flex items-center gap-2">
                         <img class="size-16" src="img/logo.png" class="max-w-96" />
+                        <span class="text-2xl">Ururka Barbaarta Aayaha Dalka</span>
                     </a>
+                    
                 </div>
                 <div class="flex-none">
                     <!-- <ul class="menu menu-horizontal px-1">
@@ -32,7 +36,7 @@
     <!-- The hero -->
     <section>
         <div class="hero bg-gradient-to-r from-cyan-500 to-blue-500 p-8 pb-12">
-            <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="max-w-2xl mx-auto">
                 <img src="img/vote.png" width="250" />
                 <div class="text-wrap flex flex-col gap-8">
                     <h1 class="text-5xl font-bold">Doorashada Gudoomiyaha Ururka UBAD</h1>
@@ -41,12 +45,12 @@
                         doorashada u dhaceyso oo LIVE ah</p>
                     <p></p>
                     <div class="grid gap-4 max-w-md">
-                        <a href="https://forms.gle/ccA4kPmyv2J3ebMi8" target="_blank" rel="noopener noreferrer"
+                        <a href="https://forms.gle/cKBbc48EsMjTgkFi6" target="_blank" rel="noopener noreferrer"
                             class="bg-[#218533] p-4 rounded-lg hover:bg-[#244b2b] text-white text-center text-bold">Codkaada
                             Dhiibo</a>
-                        <!-- <a href="https://forms.gle/ccA4kPmyv2J3ebMi8" target="_blank" rel="noopener noreferrer"
+                        <a href="https://forms.gle/JRtMGZ8SntWp55h59" target="_blank" rel="noopener noreferrer"
                             class="bg-[#218533] p-4 rounded-lg hover:bg-[#244b2b] text-white text-center text-bold">Codkaada
-                            Dhiibo wareega labaad</a> -->
+                            Dhiibo wareega labaad</a>
                     </div>
                     
                 </div>
@@ -54,44 +58,54 @@
         </div>
     </section>
 
-    <section id="Musharaxiinta" class="container mx-auto pt-12 pb-12 ">
+    <section class="max-w-5xl mx-auto pt-12 pb-12">
         <h1 class="text-5xl font-bold text-center p-4">Musharaxiinta</h1>
         <!-- the cards  -->
-        <div class="flex flex-wrap justify-center mt-10 gap-4 p-4">
-            <div class="card bg-base-100 w-96 shadow-xl border">
-                <figure>
-                    <img class="rounded-tl object-cover" src='musharaxiinta/artan.jpeg' />
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-3xl">Abdirahmaan Maxmed Cabdi Artan</h2>
+        <div class="grid md:grid-cols-3 gap-4 justify-items-center">
+            <div class="card bg-base-100  shadow-xl border border-gray-300 max-w-96"> 
+                <div class="card-header p-4">
+                    <h2 class="card-title text-xl">Abdirahmaan Maxmed Cabdi Artan</h2>
                 </div>
+                <figure>
+                    <img class="object-cover" src='musharaxiinta/artan.jpeg' />
+                </figure>
             </div>
-            <div class="card bg-base-100 w-96 shadow-xl border">
-                <figure>
-                    <img class="rounded-tl object-cover" src='musharaxiinta/nasra.jpeg' />
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-3xl">Nasra Hussein</h2>
+            <div class="card bg-base-100 shadow-xl border border-gray-300 max-w-96">
+                <div class="card-header p-4">
+                    <h2 class="card-title text-xl">Nasra Hussein</h2>
                 </div>
+                <figure>
+                    <img class="object-cover" src='musharaxiinta/nasra.jpeg' />
+                </figure>
             </div>
-            <div class="card bg-base-100 w-96 shadow-xl border">
-                <figure>
-                    <img class="rounded-tl object-cover" src='musharaxiinta/xigmaawi.jpeg' />
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-3xl">Mohammed Mukhtar Hassan Xigmaawi</h2>
+            <div class="card bg-base-100 shadow-xl border border-gray-300 max-w-96">
+                <div class="card-header p-4">
+                    <h2 class="card-title text-xl">Mohammed Mukhtar Hassan Xigmaawi</h2>
                 </div>
+                <figure>
+                    <img class="object-cover" src='musharaxiinta/xigmaawi.jpeg' />
+                </figure>
             </div>
         </div>
     </section>
 
-    <section id="live">
+    
+
+    <!-- <section id="live" class=" max-w-2xl mx-auto py-12">
         <h1 class="text-5xl font-bold text-center p-4">Doorashada LIVE</h1>
         <div class="grid justify-items-center">
-            <iframe width="713" height="470" seamless frameborder="0" scrolling="no"
+            <iframe width="372" height="470" seamless frameborder="0" scrolling="no"
                 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQGg2qPPSqZ11xGP7a7Z0e7OQI8Qah254qU1_lsL7v2EnYP7z-MciLz8NM9LGFBD6DEMZYV3en6VXXG/pubchart?oid=211202270&amp;format=interactive"></iframe>
         </div>
-    </section>
+    </section> -->
+
+    <!-- <section id="live" class=" max-w-2xl mx-auto py-12">
+        <h1 class="text-5xl font-bold text-center p-4">Doorashada Wareega 2 LIVE </h1>
+        <div class="grid justify-items-center">
+            <iframe width="395" height="445" seamless frameborder="0" scrolling="no"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR5uZeQ_X_ZTJhMtjGJiin1KKssFM1UdAvIcJfDgIPxRndLNAF3sdGcaecKQgL0WkzyKv98HRvz-OPM/pubchart?oid=2123191203&amp;format=interactive"></iframe>
+        </div>
+    </section> -->
 
     <section>
         <div class="hero h-96" style="background-image: url(img/voting.jpg);">
